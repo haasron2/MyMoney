@@ -4163,11 +4163,10 @@ def show_data_frame(query_name ):
 
             # Access the selection data
             selected_rows_indices = selection_event.selection.rows
-
+            #print(selected_rows_indices)
             if selected_rows_indices:
                 # Filter the original DataFrame to get the selected data
                 filtered_df = df_query_result.iloc[selected_rows_indices] 
-                
                 st.subheader("Selected Data")
                 st.dataframe(filtered_df)
             else:
@@ -4335,4 +4334,4 @@ print ('--------------------END----------------------')
 
 
 
-# REMARK for GITHUB version 1.2
+# REMARK for GITHUB version 1.3
